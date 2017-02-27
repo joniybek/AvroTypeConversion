@@ -1,2 +1,6 @@
 # AvroTypeConversion
-This is implementation of Avro reader schema with type conversion given a avro records
+This is an implementation of Avro reader schema with type conversion given an avro records.
+### Usage
+``GenericRecord record = AvroTypeConversion.create( genericDatum, readerSchema ).convert()``
+
+

@@ -1,0 +1,19 @@
+plugins {
+    id "java"
+}
+
+version '0.1'
+
+repositories {
+    mavenLocal()
+    maven { url 'https://repository.apache.org/content/repositories/snapshots' }
+    maven { url "https://repository.cloudera.com/artifactory/cloudera-repos" }
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compileOnly "org.apache.avro:avro:${avroVersion}"
+    testCompile "org.exparity:hamcrest-date:${hamcrestdateVersion}"
+    testCompile "junit:junit:${junitVersion}"
+}
